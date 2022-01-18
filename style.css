@@ -40,6 +40,7 @@ h1,h2,h3,a{
 h1,h2,h3{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5%;
 }
 .cache{
     display: none;
@@ -92,13 +93,24 @@ figure{
 figcaption{
     font-size: 12px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-}
 .github{
     text-align: center;
 }
 .github>img{
     width: 20%;
+}
+.conteneurForm>section, p, input, textarea{
+    margin: 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+input, textarea{
+    border-radius: 15px;
+    padding: 5%;
+    background-color: #ECF0F3;
+    border-color: #B6B2B9;
 }
