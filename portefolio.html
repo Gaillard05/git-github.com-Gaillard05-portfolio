@@ -6,23 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b1009deec.js" crossorigin="anonymous"></script>
     <title>portfolio</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div>
+            <div class="titre">
                 <h1>Portfolio</h1>
                 <h3>Maylis Gaillard</h3>
             </div>
-            <nav>
+            <nav class="cache">
                 <a href="#Qui_suis_je">Qui suis-je ?</a>
                 <a href="#Mes_diplomes">Mes diplômes</a>
                 <a href="#Mon_experience">Mon expérience</a>
                 <a href="#Mes_realisations">Mes réalisations</a>
                 <a href="#Me_contacter">Me contacter</a>
             </nav>
+            <div class="menuBurger">
+                <button id="afficher"><i class="fas fa-bars"></i></button>
+            </div>
         </header>
         <main>
             <section class="presentation">
@@ -35,39 +39,42 @@
             </section>
             <div>
                 <h2 id="Mes_diplomes">Mes diplômes</h2>
-                <figure>
-                    <img src="img/Bac pro.jpeg" alt="Bac pro animalerie">
-                    <figcaption>
-                        2016-Bac pro
-                        Technitien conseil vente en animalerie
-                        Maison Familiale Rurale
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java">
-                    <figcaption>
-                        2020-Module de Java
-                        CNAM
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Certificat-professionnel-Techniques-de-développement-Web-_RS1448_-R93618XAP1638961899.jpg"
-                        alt="Certificat professionnel Techniques developpement web">
-                    <figcaption>
-                        2021-Certificat professionnel
-                        Techniques de développements web
-                        Webforce3
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Certificat-professionnel-Techniques-d’intégration-Web-_RS1447_-E79497XAP1638961897.jpg"
-                        alt="Certificat professionnel Techniques integration web">
-                    <figcaption>
-                        2021-Certificat professionnel
-                        Techniques d'intégration web
-                        Webforce3
-                    </figcaption>
-                </figure>
+                <div class="diplomes">
+                    <figure>
+                        <img src="img/Bac pro.jpeg" alt="Bac pro animalerie">
+                        <figcaption>
+                            2016-Bac pro
+                            Technitien conseil vente en animalerie
+                            Maison Familiale Rurale
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java">
+                        <figcaption>
+                            2020-Module de Java
+                            CNAM
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/Certificat-professionnel-Techniques-de-développement-Web-_RS1448_-R93618XAP1638961899.jpg"
+                            alt="Certificat professionnel Techniques developpement web">
+                        <figcaption>
+                            2021-Certificat professionnel
+                            Techniques de développements web
+                            Webforce3
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/Certificat-professionnel-Techniques-d’intégration-Web-_RS1447_-E79497XAP1638961897.jpg"
+                            alt="Certificat professionnel Techniques integration web">
+                        <figcaption>
+                            2021-Certificat professionnel
+                            Techniques d'intégration web
+                            Webforce3
+                        </figcaption>
+                    </figure>
+                </div>
+
             </div>
             <div>
                 <h2 id="Mon_experience">Mon expérience</h2>
