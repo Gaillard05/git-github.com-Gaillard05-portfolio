@@ -83,6 +83,7 @@ main{
 .presentation>p{
     text-align: left;
     margin: 5px;
+    position: relative;
 }
 img{
     width: 100%;
@@ -119,4 +120,28 @@ input, textarea{
     padding: 5%;
     background-color: #ECF0F3;
     border-color: #B6B2B9;
+}
+#fermerCv{
+    position: absolute;
+    top: 67%;
+    right: 35%;
+}
+#modale>div{
+    width: 30%;
+    background-color: rgba(15, 15, 15, 0.767);
+}
+object{
+    width: 30%;
+    height: 72%; 
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cacher{
+    display: none;
+}
+.affiche{
+    display: block;
 }
