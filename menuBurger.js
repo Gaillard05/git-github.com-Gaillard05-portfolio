@@ -4,11 +4,11 @@ let nav = document.querySelector("nav");
 btn.addEventListener("click", afficherCacher);
 
 function afficherCacher() {
-    if (nav.classList.contains("cache")) {
-        nav.classList.remove("cache");
-        nav.classList.toggle("afficher");
-    } else {
+    if (nav.classList.contains("afficher")) {
         nav.classList.remove("afficher");
-        nav.classList.toggle("cache");
+        nav.classList.add("cache");
+    } else {
+        nav.classList.add("afficher");
+        nav.classList.remove("cache");
     }
 }

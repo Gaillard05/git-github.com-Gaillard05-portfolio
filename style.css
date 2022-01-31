@@ -7,10 +7,6 @@
 body{
     margin: 0 auto;
 }
-.container{
-    max-width: 425px;
-    margin: 0 auto;
-}
 header, nav, .presentation{
     display: flex;
     flex-direction: column;
@@ -19,16 +15,17 @@ header, nav, .presentation{
     padding: 15%;
 }
 header{
+    max-width: 425px;
     background-image: url("img/fond/fond.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 40%;
+    padding-bottom: 60%;
     position: relative;
     margin: 0 auto;
 }
 .titre{
     position: absolute;
-    top: 150px;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -49,6 +46,7 @@ h1,h2,h3{
     visibility: visible;
 }
 nav{
+    visibility: hidden;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
@@ -166,4 +164,36 @@ object{
 }
 .affiche{
     display: block;
+}
+
+@media screen and (min-width: 600px) {
+    header,main{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .fas{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header,main{
+        max-width: 1404px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .fas{
+        font-size: 25px;
+    }
+    nav{
+        visibility: visible;
+    }
+    .menuBurger{
+        display: none;
+    }
 }
