@@ -15,7 +15,7 @@ header, nav, .presentation{
     padding: 15%;
 }
 header{
-    max-width: 425px;
+    width: 100%;
     background-image: url("img/fond/fond.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -143,16 +143,17 @@ input, textarea{
 }
 #fermerCv{
     position: absolute;
-    top: 67%;
-    right: 35%;
-}
-#modale>div{
-    width: 30%;
-    background-color: rgba(15, 15, 15, 0.767);
+    z-index: 1;
+    top: 70%;
+    right: 5%;
+    background-color: rgba(58, 58, 58, 0.87);
+    border: none;
+    color: #2566A4;
+    font-size: 1em;
 }
 object{
-    width: 30%;
-    height: 72%; 
+    width: 90%;
+    height: 50%; 
     margin: 0 auto;
     position: absolute;
     top: 70%;
@@ -167,8 +168,8 @@ object{
 }
 
 @media screen and (min-width: 600px) {
-    header,main{
-        max-width: 800px;
+    header{
+        width: 100%;
         margin: 0 auto;
     }
     h1{
@@ -177,11 +178,14 @@ object{
     .fas{
         font-size: 25px;
     }
+    #fermerCv{
+        right: 6vh;
+    }
 }
 
 @media screen and (min-width: 900px) {
-    header,main{
-        max-width: 1404px;
+    header{
+        width: 100%;
         margin: 0 auto;
     }
     h1{
@@ -191,9 +195,22 @@ object{
         font-size: 25px;
     }
     nav{
+        position: absolute;
+        left:0;
+        flex-direction: row;
+        justify-content: center;
         visibility: visible;
     }
     .menuBurger{
         display: none;
+    }
+    object{
+        width: 80%;
+        height: 100%;
+        transform: translate(-50%, 50%);
+    }
+    #fermerCv{
+      top : 950px;
+      right: 19vh;
     }
 }

@@ -1,8 +1,8 @@
-let contactForm = document.getElementById("form");
+// let contactForm = document.getElementById("form");
 
-let listeInputs = document.querySelectorAll("input, textarea");
+// let listeInputs = document.querySelectorAll("input, textarea");
 
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+// contactForm.addEventListener("submit", function (event) {
+//     event.preventDefault();
 
-});
+// });
