@@ -15,20 +15,23 @@
 
 <body>
     <header>
-        <div class="titre">
-            <h1>Portfolio</h1>
-            <h3>Maylis Gaillard</h3>
+        <div class="fond">
+            <div class="titre">
+                <h1>Portfolio</h1>
+                <h3>Maylis Gaillard</h3>
+            </div>
+            <nav>
+                <a href="#Qui_suis_je">Qui suis-je ?</a>
+                <a href="#Mes_diplomes">Mes diplômes</a>
+                <a href="#Mon_experience">Mon expérience</a>
+                <a href="#Mes_realisations">Mes réalisations</a>
+                <a href="#Me_contacter">Me contacter</a>
+            </nav>
+            <div class="menuBurger">
+                <button id="afficherMenu"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
-        <nav>
-            <a href="#Qui_suis_je">Qui suis-je ?</a>
-            <a href="#Mes_diplomes">Mes diplômes</a>
-            <a href="#Mon_experience">Mon expérience</a>
-            <a href="#Mes_realisations">Mes réalisations</a>
-            <a href="#Me_contacter">Me contacter</a>
-        </nav>
-        <div class="menuBurger">
-            <button id="afficherMenu"><i class="fas fa-bars"></i></button>
-        </div>
+
     </header>
     <main>
         <section class="presentation">
@@ -123,7 +126,7 @@
                 </div>
 
             </article>
-            <article>
+            <article class="Lexique">
                 <h5>Lexique</h5>
                 <p>
                     *CMS: C'est un logiciel qui permet de créer de A à Z un site web grâce à des thèmes proposé par
@@ -184,8 +187,8 @@
                 <input type="submit" value="Envoyer" class="btnContact" id="btnEnvoyer">
             </form>
         </div>
-        <div>
-            <a href="#">scroll</a>
+        <div class="scroll-top">
+            <a href="#" id="btn-scroll"><i class="fas fa-chevron-circle-up"></i></a>
         </div>
     </main>
 </body>

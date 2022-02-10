@@ -14,30 +14,48 @@ header, nav, .presentation{
     text-align: center;
     padding: 15%;
 }
+.fond{
+    width: 100%;
+    background-image: url("img/fond/fond-bas.png");
+    background-position: bottom right 0;
+}
 header{
     width: 100%;
-    background-image: url("img/fond/fond.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 60%;
+    background-size: 20%;
+    padding: 30%;
     position: relative;
     margin: 0 auto;
+    background-image: url("img/fond/fond-haut.png");
+    background-position: top left 0;
+    background-repeat: no-repeat;
 }
 .titre{
+    background-size: 40%;
+    background-image: url("img/fond/fond-bas.png");
+    background-position: bottom right 0;
     position: absolute;
+    background-repeat: no-repeat;
     top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
 }
+#cv{
+    margin: 0 auto;
+    width: 50%;
+}
 h1,h2,h3,a{
     color: #2566A4;
 }
-h1,h2,h3{
+h1,h2,h3,h4,h5{
     font-weight: bold;
     text-align: center;
     margin-bottom: 5%;
+}
+p{
+    text-align: center;
+    font-size: 12px;
 }
 .cache{
     visibility: hidden;
@@ -78,8 +96,11 @@ main{
     gap: 10px;
     justify-content: center;
 }
+.presentation{
+    padding: 5%;
+}
 .presentation>p{
-    text-align: left;
+    text-align: center;
     margin: 5px;
     position: relative;
 }
@@ -95,6 +116,10 @@ img{
     background-color: #ECF0F3;
     margin-bottom: 5%;
     box-shadow: inset 2px 2px 0 0 #b6bac0e8,inset -2px -2px 0 0 #FFFF;
+}
+.Lexique>p{
+    text-align: left;
+    margin: 2%;
 }
 .diplomes{
     display: flex;
@@ -117,7 +142,6 @@ figure{
 }
 figcaption{
     font-size: 12px;
-    text-align: center;
 }
 .github{
     text-align: center;
@@ -171,6 +195,15 @@ object{
 .affiche{
     display: block;
 }
+.scroll-top{
+    position: relative;
+    margin-bottom: 4%;
+}
+#btn-scroll{
+    position: absolute;
+    right: 2%;
+    font-size: 30px;
+}
 
 @media screen and (min-width: 600px) {
     header{
@@ -192,9 +225,13 @@ object{
     header{
         width: 100%;
         margin: 0 auto;
+        padding: 28%;
     }
     h1{
         font-size: 40px;
+    }
+    p{
+        font-size: 14px;
     }
     .fas{
         font-size: 25px;
@@ -206,7 +243,7 @@ object{
         flex-direction: row;
         justify-content: center;
         visibility: visible !important;
-        font-size: 25px;
+        font-size: 20px;
     }
     .menuBurger{
         display: none;
@@ -215,6 +252,9 @@ object{
         width: 80%;
         height: 100%;
         transform: translate(-50%, 50%);
+    }
+    #cv{
+        width: 40%;
     }
     #fermerCv{
       top : 950px;
@@ -226,5 +266,26 @@ object{
     .contenus_missions{
         display: flex;
         flex-direction: row;
+    }
+    figure>img{
+        width: 80%;
+    }
+    .diplomes{
+        gap: 1%;
+    }
+    .diplomes>figcaption{
+        text-align: left;
+    }
+    .realisations>figure>img{
+        width: 60%;
+    }
+    .github>img{
+        width: 10%;
+    }
+    form{
+        width: 30%;
+    }
+    #btn-scroll>.fas{
+        font-size: 50px;
     }
 }
