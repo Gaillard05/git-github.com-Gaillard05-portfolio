@@ -5,10 +5,8 @@ btn.addEventListener("click", afficherCacher);
 
 function afficherCacher() {
     if (nav.classList.contains("afficher")) {
-        nav.classList.remove("afficher");
-        nav.classList.add("cache");
+        nav.classList.toggle("afficher");
     } else {
-        nav.classList.add("afficher");
-        nav.classList.remove("cache");
+        nav.classList.toggle("cache");
     }
 }

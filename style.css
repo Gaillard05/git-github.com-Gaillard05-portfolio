@@ -87,28 +87,33 @@ img{
     width: 100%;
 }
 .Artcolombbus, .ArtMissions{
+    margin: 0 auto;
     border:solid 1px #D8DBE3;
     border-radius: 20px;
-    padding: 5%;
+    width: 50%;
+    padding: 3%;
     background-color: #ECF0F3;
     margin-bottom: 5%;
     box-shadow: inset 2px 2px 0 0 #b6bac0e8,inset -2px -2px 0 0 #FFFF;
 }
 .diplomes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap:10px;
-    padding: 5px;
+    gap:5%;
+    padding: 5%;
 }
 .realisations{
     display: flex;
     flex-direction: row;
+    gap:5%;
     justify-content: center;
     text-align: center;
     margin: 5px;
 }
 figure{
     width: 40%;
+    margin-bottom: 3%;
 }
 figcaption{
     font-size: 12px;
@@ -196,10 +201,12 @@ object{
     }
     nav{
         position: absolute;
-        left:0;
+        left: 10%;
+        top: 15%;
         flex-direction: row;
         justify-content: center;
-        visibility: visible;
+        visibility: visible !important;
+        font-size: 25px;
     }
     .menuBurger{
         display: none;
@@ -212,5 +219,12 @@ object{
     #fermerCv{
       top : 950px;
       right: 19vh;
+    }
+    .Artcolombbus,  .ArtMissions{
+        width: 30%;
+    }
+    .contenus_missions{
+        display: flex;
+        flex-direction: row;
     }
 }
