@@ -63,6 +63,12 @@ p{
 .afficher{
     visibility: visible;
 }
+.cacher{
+    display: none;
+}
+.affiche{
+    display: block;
+}
 nav{
     visibility: hidden;
     margin-top: 2%;
@@ -126,7 +132,26 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     gap:5%;
-    padding: 5%;
+    padding: 5%; 
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+figure{
+    overflow: hidden;
+}
+.img-diplomes:hover{
+   transition: ease-in 1s;
+   transform: scale(2);
 }
 .realisations{
     display: flex;
@@ -160,11 +185,11 @@ form{
 }
 input, textarea{
     border-radius: 15px;
-    box-shadow: 2px 2px 0 0 #9AA7B2;
-    border: 2px solid #B6B2B9;
-    padding: 5%;
     background-color: #ECF0F3;
     border-color: #B6B2B9;
+    border: 2px solid #B6B2B9;
+    box-shadow: 2px 2px 0 0 #9AA7B2;
+    padding: 5%;
 }
 .btnContact{
     padding: 3%;

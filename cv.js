@@ -8,7 +8,6 @@ cv.addEventListener("click", fenetreCV);
 
 
 function fenetreCV() {
-    // window.open('img/Cv_Maylis_Gaillard.png');
     div.classList.remove("cacher");
     div.classList.add("affiche");
 }
@@ -16,7 +15,6 @@ function fenetreCV() {
 btnFermeture.addEventListener("click", fermerCV);
 
 function fermerCV() {
-    // window.open('img/Cv_Maylis_Gaillard.png');
     div.classList.remove("affiche");
     div.classList.add("cacher");
 }

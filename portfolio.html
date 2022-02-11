@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0b1009deec.js" crossorigin="anonymous"></script>
     <script src="menuBurger.js" async></script>
+    <script src="affichDiplomes.js" async></script>
     <script src="cv.js" async></script>
     <script src="controleFormContact.js" async></script>
     <title>portfolio</title>
@@ -15,23 +16,20 @@
 
 <body>
     <header>
-        <div class="fond">
-            <div class="titre">
-                <h1>Portfolio</h1>
-                <h3>Maylis Gaillard</h3>
-            </div>
-            <nav>
-                <a href="#Qui_suis_je">Qui suis-je ?</a>
-                <a href="#Mes_diplomes">Mes diplômes</a>
-                <a href="#Mon_experience">Mon expérience</a>
-                <a href="#Mes_realisations">Mes réalisations</a>
-                <a href="#Me_contacter">Me contacter</a>
-            </nav>
-            <div class="menuBurger">
-                <button id="afficherMenu"><i class="fas fa-bars"></i></button>
-            </div>
+        <div class="titre">
+            <h1>Portfolio</h1>
+            <h3>Maylis Gaillard</h3>
         </div>
-
+        <nav>
+            <a href="#Qui_suis_je">Qui suis-je ?</a>
+            <a href="#Mes_diplomes">Mes diplômes</a>
+            <a href="#Mon_experience">Mon expérience</a>
+            <a href="#Mes_realisations">Mes réalisations</a>
+            <a href="#Me_contacter">Me contacter</a>
+        </nav>
+        <div class="menuBurger">
+            <button id="afficherMenu"><i class="fas fa-bars"></i></button>
+        </div>
     </header>
     <main>
         <section class="presentation">
@@ -48,10 +46,10 @@
         </div>
         <div>
             <h2 id="Mes_diplomes">Mes diplômes</h2>
-            <div class="diplomes">
+            <div class="diplomes" id="contenus-diplomes">
                 <figure>
                     <img src="img/Certificat-professionnel-Techniques-de-développement-Web-_RS1448_-R93618XAP1638961899.jpg"
-                        alt="Certificat professionnel Techniques developpement web">
+                        alt="Certificat professionnel Techniques developpement web" class="img-diplomes">
                     <figcaption>
                         2021-Certificat professionnel
                         Techniques de développements web
@@ -60,7 +58,7 @@
                 </figure>
                 <figure>
                     <img src="img/Certificat-professionnel-Techniques-d’intégration-Web-_RS1447_-E79497XAP1638961897.jpg"
-                        alt="Certificat professionnel Techniques integration web">
+                        alt="Certificat professionnel Techniques integration web" class="img-diplomes">
                     <figcaption>
                         2021-Certificat professionnel
                         Techniques d'intégration web
@@ -68,14 +66,15 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java">
+                    <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java"
+                        class="img-diplomes">
                     <figcaption>
                         2020-Module de Java
                         CNAM
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Bac pro.jpeg" alt="Bac pro animalerie">
+                    <img src="img/Bac pro.jpeg" alt="Bac pro animalerie" class="img-diplomes">
                     <figcaption>
                         2016-Bac pro
                         Technitien conseil vente en animalerie
