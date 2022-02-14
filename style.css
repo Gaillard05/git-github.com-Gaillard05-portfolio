@@ -113,7 +113,7 @@ main{
 img{
     width: 100%;
 }
-.Artcolombbus, .ArtMissions{
+.Artcolombbus, .ArtMissions, #contenus-lexique{
     margin: 0 auto;
     border:solid 1px #D8DBE3;
     border-radius: 20px;
@@ -123,20 +123,22 @@ img{
     margin-bottom: 5%;
     box-shadow: inset 2px 2px 0 0 #b6bac0e8,inset -2px -2px 0 0 #FFFF;
 }
-.Lexique>p{
+#contenus-lexique>p{
     text-align: left;
     margin: 2%;
 }
+#contenus-lexique, .diplomes{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+ }
 .diplomes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:5%;
     padding: 5%; 
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
 }
 @keyframes fadein{
     from{
@@ -171,7 +173,7 @@ figcaption{
 .github{
     text-align: center;
 }
-.github>img{
+.lien-github>img{
     width: 20%;
 }
 .conteneurForm>section, p, input, textarea{
