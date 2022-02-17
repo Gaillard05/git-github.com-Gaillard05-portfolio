@@ -179,10 +179,11 @@ figcaption{
 .conteneurForm>section, p, input, textarea{
     margin: 5%;
 }
-form{
+form, .champs, .btnContact{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    justify-content: center;
+    width: 80%;
     margin: 0 auto;
 }
 input, textarea{
@@ -194,8 +195,9 @@ input, textarea{
     padding: 5%;
 }
 .btnContact{
+    text-align: center;
     padding: 3%;
-    width: 30%;
+    width: 40%;
 }
 #fermerCv{
     position: absolute;
@@ -311,11 +313,14 @@ object{
     .realisations>figure>img{
         width: 60%;
     }
-    .github>img{
+    .lien-github>img {
         width: 10%;
     }
     form{
-        width: 30%;
+        width: 40%;
+    }
+    .nonValide{
+        color:red;
     }
     .scroll-top{
         right: 5%;
