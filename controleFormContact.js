@@ -4,6 +4,8 @@ let form = document.getElementById("form");
 
 let listInput = document.querySelectorAll("input, textarea");
 
+let longeurNumeroTel = 10;
+
 form.addEventListener("submit", valide);
 
 for (elements of contenuForm) {
