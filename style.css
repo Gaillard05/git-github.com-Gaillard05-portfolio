@@ -1,25 +1,31 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     margin: 0 auto;
 }
-header, nav, .presentation{
+
+header,
+nav,
+.presentation {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     padding: 15%;
 }
-.fond{
+
+.fond {
     width: 100%;
     background-image: url("img/fond/fond-bas.png");
     background-position: bottom right 0;
 }
-header{
+
+header {
     width: 100%;
     background-size: 20%;
     padding: 30%;
@@ -29,7 +35,8 @@ header{
     background-position: top left 0;
     background-repeat: no-repeat;
 }
-.titre{
+
+.titre {
     background-size: 40%;
     background-image: url("img/fond/fond-bas.png");
     background-position: bottom right 0;
@@ -41,35 +48,51 @@ header{
     bottom: 0;
     margin: 0 auto;
 }
-#cv{
+
+#cv {
     margin: 0 auto;
     width: 50%;
 }
-h1,h2,h3,a{
+
+h1,
+h2,
+h3,
+a {
     color: #2566A4;
 }
-h1,h2,h3,h4,h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 5%;
 }
-p{
+
+p {
     text-align: center;
     font-size: 12px;
 }
-.cache{
+
+.cache {
     visibility: hidden;
 }
-.afficher{
+
+.afficher {
     visibility: visible;
 }
-.cacher{
+
+.cacher {
     display: none;
 }
-.affiche{
+
+.affiche {
     display: block;
 }
-nav{
+
+nav {
     visibility: hidden;
     margin-top: 2%;
     display: flex;
@@ -80,113 +103,146 @@ nav{
     top: 20px;
     right: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.fas{
-    color:#2566A4;
+
+.fas {
+    color: #2566A4;
 }
-.menuBurger{
+
+.menuBurger {
     position: absolute;
     top: 10px;
     right: 30px;
 }
-.menuBurger>button{
+
+.menuBurger>button {
     display: block;
-    border:none;
+    border: none;
     background-color: #FFFF;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
 }
-.presentation{
+
+.presentation {
     padding: 5%;
 }
-.presentation>p{
+
+.presentation>p {
     text-align: center;
     margin: 5px;
     position: relative;
 }
-img{
+
+img {
     width: 100%;
 }
-.Artcolombbus, .ArtMissions, #contenus-lexique{
+
+.Artcolombbus,
+.ArtMissions,
+#contenus-lexique {
     margin: 0 auto;
-    border:solid 1px #D8DBE3;
+    border: solid 1px #D8DBE3;
     border-radius: 20px;
     width: 50%;
     padding: 3%;
     background-color: #ECF0F3;
     margin-bottom: 5%;
-    box-shadow: inset 2px 2px 0 0 #b6bac0e8,inset -2px -2px 0 0 #FFFF;
+    box-shadow: inset 2px 2px 0 0 #b6bac0e8, inset -2px -2px 0 0 #FFFF;
 }
-#contenus-lexique>p{
+
+#contenus-lexique>p {
     text-align: left;
     margin: 2%;
 }
-#contenus-lexique, .diplomes{
+
+#contenus-lexique,
+.diplomes {
     animation: fadein 2s;
     -moz-animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -o-animation: fadein 2s;
- }
-.diplomes{
+}
+
+.diplomes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:5%;
-    padding: 5%; 
+    gap: 5%;
+    padding: 5%;
 }
-@keyframes fadein{
-    from{
+
+@keyframes fadein {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-figure{
+
+figure {
     overflow: hidden;
 }
-.img-diplomes:hover{
-   transition: ease-in 1s;
-   transform: scale(2);
+
+.img-diplomes:hover {
+    transition: ease-in 1s;
+    transform: scale(2);
 }
-.realisations{
+
+.realisations {
     display: flex;
     flex-direction: row;
-    gap:5%;
+    gap: 5%;
     justify-content: center;
     text-align: center;
     margin: 5px;
 }
-figure{
+
+figure {
     width: 40%;
     margin-bottom: 3%;
 }
-figcaption{
+
+figcaption {
     font-size: 12px;
 }
-.github{
+
+.github {
     text-align: center;
 }
-.lien-github>img{
+
+.lien-github>img {
     width: 20%;
 }
-.conteneurForm>section, p, input, textarea{
+
+.conteneurForm>section,
+p,
+input,
+textarea {
     margin: 5%;
 }
-form, .champs, .btnContact{
+
+form,
+.champs,
+.btnContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
 }
-input, textarea{
+
+input,
+textarea {
     border-radius: 15px;
     background-color: #ECF0F3;
     border-color: #B6B2B9;
@@ -194,12 +250,14 @@ input, textarea{
     box-shadow: 2px 2px 0 0 #9AA7B2;
     padding: 5%;
 }
-.btnContact{
+
+.btnContact {
     text-align: center;
     padding: 3%;
     width: 40%;
 }
-#fermerCv{
+
+#fermerCv {
     position: absolute;
     z-index: 1;
     top: 70%;
@@ -209,68 +267,81 @@ input, textarea{
     color: #2566A4;
     font-size: 1em;
 }
-object{
+
+object {
     width: 90%;
-    height: 50%; 
+    height: 50%;
     margin: 0 auto;
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
-.cacher{
+
+.cacher {
     display: none;
 }
-.affiche{
+
+.affiche {
     display: block;
 }
-.scroll-top{
+
+.scroll-top {
     position: absolute;
     bottom: 0;
     right: 10%;
     margin-bottom: 4%;
 }
-#btn-scroll{
+
+#btn-scroll {
     position: fixed;
     bottom: 1%;
     font-size: 30px;
 }
 
 @media screen and (min-width: 600px) {
-    header{
+    header {
         width: 100%;
         margin: 0 auto;
     }
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    .fas{
+
+    .fas {
         font-size: 25px;
     }
-    #fermerCv{
+
+    #fermerCv {
         right: 6vh;
     }
-    .scroll-top{
+
+    .scroll-top {
         right: 5%;
     }
 }
 
 @media screen and (min-width: 900px) {
-    header{
+    header {
         width: 100%;
         margin: 0 auto;
         padding: 28%;
     }
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    p{
+
+    p {
         font-size: 14px;
     }
-    .fas{
+
+    .fas {
         font-size: 25px;
     }
-    nav{
+
+    nav {
         position: absolute;
         left: 10%;
         top: 15%;
@@ -279,53 +350,73 @@ object{
         visibility: visible !important;
         font-size: 20px;
     }
-    .menuBurger{
+
+    .menuBurger {
         display: none;
     }
-    object{
+
+    object {
         width: 80%;
         height: 100%;
         transform: translate(-50%, 50%);
     }
-    #cv{
+
+    #cv {
         width: 40%;
     }
-    #fermerCv{
-      top : 120vh;
-      right: 20.5vh;
+
+    #fermerCv {
+        top: 120vh;
+        right: 20.5vh;
     }
-    .Artcolombbus,  .ArtMissions{
+
+    .Artcolombbus,
+    .ArtMissions {
         width: 30%;
     }
-    .contenus_missions{
+
+    .contenus_missions {
         display: flex;
         flex-direction: row;
     }
-    figure>img{
+
+    figure>img {
         width: 80%;
     }
-    .diplomes{
+
+    .diplomes {
         gap: 1%;
     }
-    .diplomes>figcaption{
+
+    .diplomes>figcaption {
         text-align: left;
     }
-    .realisations>figure>img{
+
+    .realisations>figure>img {
         width: 60%;
     }
+
     .lien-github>img {
         width: 10%;
     }
-    form{
+
+    form {
         width: 40%;
     }
-    .nonValide{
-        color:red;
+
+    .nonValide {
+        color: red;
     }
-    .scroll-top{
+
+    .valide {
+        color: green;
+    }
+
+    .scroll-top {
         right: 5%;
     }
-    #btn-scroll>.fas{
+
+    #btn-scroll>.fas {
         font-size: 50px;
     }
 }

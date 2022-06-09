@@ -15,32 +15,24 @@ for (elements of contenuForm) {
 }
 
 function valide(event) {
-    event.preventDefault();
     for (input of listInput) {
         input.parentNode.lastElementChild.innerText = "";
-        switch (input.type) {
-            case "text":
-                if (input.value == "") {
-                    input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre nom";
-                }
-                break;
-            case "tel":
-                if (input.value == "") {
-                    input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre numéro de téléphone";
-                }
-                break;
-            case "email":
-                if (input.value == "") {
-                    input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre adresse mail";
-                }
-                break;
-            case "textarea":
-                if (input.value == "") {
-                    input.parentNode.lastElementChild.innerText = "Veuillez écrire le motif de votre demande";
-                }
-                break;
-            default: "erreur champs non valides";
-                break;
+        if (input.value == "") {
+            event.preventDefault();
+        }
+        if (input.value == "" && input.type == 'text') {
+            input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre nom";
+        }
+        if (input.value == "" && input.type == 'tel') {
+            input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre numéro de téléphone";
+        }
+        if (input.value == "" && input.type == 'email') {
+            input.parentNode.lastElementChild.innerText = "Veuillez renseigner votre email";
+        }
+        if (input.value == "" && input.type == 'textarea') {
+            input.parentNode.lastElementChild.innerText = "Veuillez renseigner la raison de votre demande";
         }
     }
+
 }
+

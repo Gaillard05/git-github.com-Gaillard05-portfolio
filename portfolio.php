@@ -11,7 +11,6 @@
     <script src="affichDiplomes.js" async></script>
     <script src="cv.js" async></script>
     <script src="affichLexique.js" async></script>
-    <script src="controleFormContact.js" async></script>
     <title>portfolio</title>
 </head>
 
@@ -49,8 +48,7 @@
             <h2 id="Mes_diplomes">Mes diplômes</h2>
             <div class="diplomes" id="contenus-diplomes">
                 <figure>
-                    <img src="img/Certificat-professionnel-Techniques-de-développement-Web-_RS1448_-R93618XAP1638961899.jpg"
-                        alt="Certificat professionnel Techniques developpement web" class="img-diplomes">
+                    <img src="img/Certificat-professionnel-Techniques-de-développement-Web-_RS1448_-R93618XAP1638961899.jpg" alt="Certificat professionnel Techniques developpement web" class="img-diplomes">
                     <figcaption>
                         2021-Certificat professionnel
                         Techniques de développements web
@@ -58,8 +56,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Certificat-professionnel-Techniques-d’intégration-Web-_RS1447_-E79497XAP1638961897.jpg"
-                        alt="Certificat professionnel Techniques integration web" class="img-diplomes">
+                    <img src="img/Certificat-professionnel-Techniques-d’intégration-Web-_RS1447_-E79497XAP1638961897.jpg" alt="Certificat professionnel Techniques integration web" class="img-diplomes">
                     <figcaption>
                         2021-Certificat professionnel
                         Techniques d'intégration web
@@ -67,8 +64,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java"
-                        class="img-diplomes">
+                    <img src="img/Attestation_Succes_19042021151417_343570.jpg" alt="Module de java" class="img-diplomes">
                     <figcaption>
                         2020-Module de Java
                         CNAM
@@ -179,8 +175,13 @@
                 <h2 id="Me_contacter">Me contacter</h2>
                 <p>Un projet, une question n'hésitez pas à me contacter.
                     Je vous répondrai dans les meilleurs délais</p>
+                <p id="valideEnvoi"><?php if (!empty($_POST)) {
+                                        echo "Votre demande à bien été envoyée";
+                                    } else {
+                                        echo "Veuillez renseigner vos champs";
+                                    } ?></p>
             </section>
-            <form action="contact.php" method="post" id="form">
+            <form action="portfolio.php#Me_contacter" method="post" id="form">
                 <div class="champs">
                     <input type="text" name="nom" placeholder="nom" id="nom" minlength="2" maxlength="25">
                 </div>
@@ -191,8 +192,7 @@
                     <input type="email" name="mail" placeholder="adresse mail">
                 </div>
                 <div class="champs">
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="motif de votre demande"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="motif de votre demande"></textarea>
                 </div>
                 <div class="btnContact">
                     <input type="submit" value="Envoyer" id="btnEnvoyer">
@@ -204,5 +204,6 @@
         </div>
     </main>
 </body>
+<script src="controleFormContact.js"></script>
 
 </html>
