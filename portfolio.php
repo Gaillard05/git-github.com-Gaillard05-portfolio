@@ -1,3 +1,6 @@
+<?php
+require_once "contact.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
